@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="forca.js"></script>
+</head>
+<body>
+    <h1 id="tituloPag">Acerte a palavra secreta!</h1>
+    <div class="container">
+        <div class="textos">    
+            <h3>Digite a palavra secreta:</h3>
+            <input id="segredo" type="password" onkeyup="habilitarBtInicio()">
+            <button id="btInicia" disabled onclick="iniciarOJogo()">Iniciar o jogo</button>            
+            <h3>Digite uma letra:</h3>
+            <input id="tentativa" disabled type="text" maxlength="1">                       
+            <button id="btVerifica" disabled onclick="verificaLetraDigitada()">Confirma</button>
+            <h1 id="painel"></h1>    
+            <h1>Erros:</h1>
+            <h1 id="erradas">_</h1>
+            <button id="reset" hidden onclick="reiniciaJogo()">Reiniciar o jogo</button>
+        </div>
+        <div class="desenho">
+            <img id="image" src="1.png">
+        </div>
+    </div>
+</body>
+</html>
